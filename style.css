@@ -1,3 +1,26 @@
+/* Student ID: 22001414 */
+
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Poppins:wght@400;800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+}
+/* removing default margins */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+/* Navbar */
+
 .navbar {
   position: sticky;
   top: 0;
@@ -7,32 +30,199 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 1rem;
-  gap: 1rem;
-  width: 100%;
-  height: 5rem;
+  padding: 1rem 2rem;
+  gap: 2rem;
+  max-height: 6rem;
+  margin-top: -6rem;
 }
 
 .navbar.scroll {
-  background: #00000050;
+  background: #00000001;
 }
 
-.navbar a {
+.nav-link {
   color: white;
   text-decoration: none;
   font-size: 1.5rem;
+  font-family: "Roboto";
 }
 
-.navbar a:hover {
+.nav-link:hover {
   color: #87c0e1;
 }
 
 .navbar div {
   display: flex;
-  gap: 0.5rem;
+  align-items: center;
+  gap: 2rem;
 }
 
 .company-logo {
   width: 20rem;
 }
 
+/* Landing Screen */
+
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.hero h1,
+.hero a {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+}
+
+.hero h1 {
+  font-size: 6.75rem;
+  line-height: 1em;
+  text-align: center;
+  color: white;
+}
+
+.main-btn,
+.secondary-btn {
+  font-size: 1.25rem;
+  font-weight: 500;
+  padding: 12px 20px;
+  border-radius: 1000px;
+  background-color: white;
+  border: 2px solid white;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.secondary-btn {
+  background-color: #87c0e1;
+  border: 2px solid #87c0e1;
+  color: black;
+}
+
+.main-btn:hover {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  transition: all 0.2s ease;
+}
+
+.accent-font {
+  font-family: "Caveat";
+}
+
+/* Partner Promotions Section */
+
+.partner-promotions-section {
+  padding: 4rem 2rem;
+}
+
+.partner-promotions {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  grid-auto-rows: min-content;
+}
+
+.partner-promotions-section h2 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  line-height: 1em;
+  text-align: center;
+  color: #003366;
+}
+
+.partner-promotions-section p {
+  font-size: 1.25rem;
+  line-height: 1.5em;
+  margin-bottom: 4rem;
+  text-align: center;
+  color: #506583;
+}
+
+.partner-card {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid #dadada;
+  text-align: center;
+  margin: 0 auto;
+  padding: 35px;
+}
+
+.partner-card:hover {
+  transform: scale(1.05);
+}
+
+.partner-card img {
+  width: 15rem;
+}
+
+.partner-card h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 1.25em;
+  color: #003366;
+}
+
+.info-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem 2rem;
+}
+
+/* About Section */
+
+.info-section h3 {
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1.25em;
+  margin: 0;
+}
+
+.info-section img {
+  width: 100%;
+  height: 30rem;
+  object-fit: cover;
+}
+
+.mini-heading {
+  font-size: 0.9rem;
+  color: #506583;
+}
