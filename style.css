@@ -250,6 +250,21 @@ nav div {
   object-fit: cover;
 }
 
+/* Image Gallery */
+
+.img-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.img-gallery img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+
 .mini-heading {
   font-size: 0.9rem;
   color: #506583;
