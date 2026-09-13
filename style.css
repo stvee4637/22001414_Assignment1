@@ -1,12 +1,13 @@
 /* Student ID: 22001414 */
 
-@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Poppins:wght@400;800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Manrope:wght@200..800&family=Poppins:wght@400;800&display=swap");
 
 html,
 body {
   margin: 0;
   padding: 0;
   font-family: "poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 /* removing default margins */
 h1,
@@ -37,18 +38,22 @@ nav {
 }
 
 nav.scroll {
-  background: #00000001;
+  background: #003366;
 }
 
 .nav-link {
   color: white;
   text-decoration: none;
   font-size: 1.5rem;
-  font-family: "Roboto";
+  font-family: "Manrope";
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .nav-link:hover {
   color: #87c0e1;
+  border-bottom: 2px solid #87c0e1;
+  transform: translateY(-2px);
   transition: all 0.2s ease;
 }
 
@@ -122,17 +127,23 @@ nav div {
   text-transform: uppercase;
 }
 
+.main-btn:hover {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  transition: all 0.2s ease;
+}
+
 .secondary-btn {
   background-color: #87c0e1;
   border: 2px solid #87c0e1;
   color: black;
 }
 
-.main-btn:hover {
-  background-color: transparent;
-  border: 2px solid white;
-  color: white;
-  transition: all 0.2s ease;
+.secondary-btn:hover {
+  background-color: white;
+  border: 2px solid #003366;
+  color: #003366;
 }
 
 .accent-font {
@@ -141,8 +152,9 @@ nav div {
 
 /* Partner Promotions Section */
 
-.partner-promotions-section {
+.activities-section {
   padding: 4rem 2rem;
+  scroll-margin-top: 10rem;
 }
 
 .partner-promotions {
@@ -152,7 +164,7 @@ nav div {
   grid-auto-rows: min-content;
 }
 
-.partner-promotions-section h2 {
+.activities-section h2 {
   font-size: 3.5rem;
   margin-bottom: 1rem;
   line-height: 1em;
@@ -160,7 +172,7 @@ nav div {
   color: #003366;
 }
 
-.partner-promotions-section p {
+.activities-section p {
   font-size: 1.25rem;
   line-height: 1.5em;
   margin-bottom: 4rem;
@@ -206,6 +218,7 @@ nav div {
   align-items: center;
   gap: 2rem;
   padding: 3rem 2rem;
+  scroll-margin-top: 10rem;
 }
 
 /* About Section */
@@ -219,13 +232,30 @@ nav div {
 
 .info-section img {
   width: 100%;
-  height: 30rem;
+  height: 35rem;
   object-fit: cover;
 }
 
 .mini-heading {
   font-size: 0.9rem;
   color: #506583;
+}
+
+.destination-link {
+  text-decoration: none;
+  color: #506583;
+}
+.destination-link:hover {
+  color: #87c0e1;
+  border-bottom: 2px solid #87c0e1;
+}
+
+.destination-list {
+  margin-bottom: 2rem;
+}
+
+.destination-list dt {
+  margin-top: 1rem;
 }
 
 /* Contact Section */
@@ -275,7 +305,7 @@ footer h6,
   color: #003366;
   text-decoration: none;
   font-size: 1.25rem;
-  font-family: "Roboto";
+  font-family: "Manrope";
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -302,4 +332,56 @@ footer h6,
   color: black;
   transform: scale(1.05);
   transition: all 0.2s ease;
+}
+
+/* Popup Styles */
+
+.popup {
+  background-color: #00000099;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1000;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup button {
+  display: block;
+  margin: 0 0 20px auto;
+  background-color: transparent;
+  font-size: 30px;
+  color: #c5c5c5;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.popup-content {
+  background-color: #ffffff;
+  width: 450px;
+  padding: 30px 40px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.popup-content p {
+  font-size: 14px;
+  margin: 20px 0;
+  line-height: 25px;
+}
+.popup-content a {
+  display: block;
+  width: 150px;
+  position: relative;
+  margin: 10px auto;
+  text-align: center;
+  background-color: #0f72e5;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 5px 0;
 }

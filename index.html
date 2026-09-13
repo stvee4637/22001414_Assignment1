@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NZ Tourism Pro</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
   </head>
   <body>
     <nav id="navbar">
@@ -16,9 +15,9 @@
         class="company-logo"
       />
       <div>
-        <a class="nav-link" href="#how-it-works">How It Works</a>
-        <a class="nav-link" href="#our-team">Our Team</a>
-        <a class="nav-link" href="#locations">Our Locations</a>
+        <a class="nav-link" href="#destinations-section">Top Destinations</a>
+        <a class="nav-link" href="#activities">Local Activities</a>
+        <a class="nav-link" href="#meet-steve">Meet Steve</a>
         <a class="secondary-btn" href="#contact-us">Contact Us</a>
       </div>
     </nav>
@@ -29,16 +28,12 @@
           NZ TOURISM<br />
           <span class="accent-font" style="color: #87c0e1">REDEFINED</span>
         </h1>
-        <p></p>
         <a class="main-btn" href="#contact-us">Book Now</a>
         <img src="images/queenstown-wide.png" alt="Auckland City Night View" />
       </header>
 
-      <section class="info-section">
+      <section class="info-section" id="destinations-section">
         <div>
-          <span class="mini-heading"
-            >World Class Beaches, Waterfalls & Mountains</span
-          >
           <h3>
             First Class <br />
             <span class="accent-font" style="color: #87c0e1; font-size: 7rem"
@@ -47,19 +42,65 @@
             <br />
             Experience
           </h3>
-          <p>
-            NZ Tourism Pro is a New Zealand based tourism company that provides
-            first class travel experiences to tourists from around the world.
+          <p style="margin-top: 1rem">
+            When visiting New Zealand, theres a few places you must see before
+            leaving and telling your mates about it!
           </p>
-          <p style="margin-bottom: 2rem">
-            Our team of highly trained and experienced tour guides will ensure
-            that your trip to New Zealand is unforgettable. We offer a wide
-            range of tours and activities, from scenic drives and hikes to
-            cultural experiences and adventure sports. Our goal is to provide
-            our clients with an authentic and memorable experience of New
-            Zealand's natural beauty and unique culture.
-          </p>
-          <a class="secondary-btn" href="#contact-us">Request Session</a>
+          <dl class="destination-list">
+            <dt>
+              <strong>Queenstown | #1 Adventure capital Of the World</strong>
+            </dt>
+            <dd>
+              wildly known for it's all-year round
+              <a
+                class="destination-link"
+                href="https://www.nzoneskydive.co.nz/"
+                target="_blank"
+                >Sky Diving,</a
+              >
+              <a
+                class="destination-link"
+                href="https://queenstown.skyline.co.nz/things-to-do/queenstown-gondola/"
+                target="_blank"
+                >Gondola,</a
+              >
+
+              <a
+                class="destination-link"
+                href="https://queenstown.skyline.co.nz/things-to-do/queenstown-luge/"
+                target="_blank"
+                >Luge,</a
+              >
+              iconic restaurants like
+              <a
+                class="destination-link"
+                href="https://www.fergburger.com/"
+                target="_blank"
+                >Furg Burger
+              </a>
+              (known for famous people coming all over the world to try it out!)
+            </dd>
+            <dt>
+              <strong
+                >Milford Sound | #1 Location for Scenic Boat Cruises</strong
+              >
+            </dt>
+            <dd>
+              Cruise along one of the most iconic Scenic Lakes in Aotearoa (New
+              Zealand.) <br />
+              With the Iconic Peak which rises 1,692 Metres from the water, you
+              can go Kayaking at night. Look at dolphins, fur seals, and
+              Fiordland crested penguins.
+            </dd>
+            <dt>
+              <strong>Mount Cook National Park | Highest Peak in NZ</strong>
+            </dt>
+            <dd>
+              Known to be the highest peak in NZ, check out the
+              beginner-friendly hike, which is a 3-hour loop to view Mount Cook
+              and the glaciers. You also have
+            </dd>
+          </dl>
         </div>
         <img
           src="images/south-island-mountains.png"
@@ -67,8 +108,8 @@
         />
       </section>
 
-      <section class="partner-promotions-section">
-        <h2>Promotions from local Businesses</h2>
+      <section class="activities-section" id="activities">
+        <h2>Activities from local Businesses</h2>
         <p>
           Visit Some of New Zealand's most popular tourist attractions and
           activities at a fair price. <br />Check out the current offers below!
@@ -142,7 +183,7 @@
         </div>
       </section>
 
-      <section class="info-section">
+      <section class="info-section" id="meet-steve">
         <img
           src="images/Steven_Metry.png"
           alt="Steven Metry - Local NZ Tour Specialist"
@@ -290,5 +331,17 @@
         >&copy; Steven Metry Assignment 1 Submission</span
       >
     </footer>
+    <div class="popup">
+      <div class="popup-content">
+        <button id="close">&times;</button>
+        <h2>Welcome to NZ Tourism Pro</h2>
+        <p>
+          Check out our website to see the top destinations, activities and
+          discounts by local businesses.
+        </p>
+        <a id="popup-cta" href="/#destinations-section">Let's Go</a>
+      </div>
+    </div>
+    <script src="/script.js"></script>
   </body>
 </html>
