@@ -228,6 +228,24 @@ nav div {
   color: #506583;
 }
 
+/* Contact Section */
+
+.contact-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  gap: 4rem;
+  padding: 0 2rem;
+}
+
+.contact-section h5 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  line-height: 1em;
+  color: #003366;
+}
+
 /* Footer */
 
 footer {
@@ -238,7 +256,8 @@ footer {
   gap: 6rem;
 }
 
-footer h6 {
+footer h6,
+.contact-section h6 {
   font-size: 2rem;
   font-weight: 800;
   margin-bottom: 1rem;
@@ -251,7 +270,8 @@ footer h6 {
 }
 
 .footer-link,
-.footer-item {
+.footer-item,
+.contact-link {
   color: #003366;
   text-decoration: none;
   font-size: 1.25rem;
@@ -262,6 +282,7 @@ footer h6 {
 }
 .footer-link:hover {
   color: white;
+  transform: scale(1.05);
   transition: all 0.2s ease;
 }
 
@@ -271,7 +292,14 @@ footer h6 {
   gap: 1rem;
 }
 
-.footer-link svg {
+.footer-link svg,
+.contact-link svg {
   width: 1.5rem;
   height: 1.5rem;
+}
+
+.contact-link:hover {
+  color: black;
+  transform: scale(1.05);
+  transition: all 0.2s ease;
 }
