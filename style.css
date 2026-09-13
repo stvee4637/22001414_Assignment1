@@ -21,7 +21,7 @@ p {
 
 /* Navbar */
 
-.navbar {
+nav {
   position: sticky;
   top: 0;
   z-index: 10;
@@ -36,7 +36,7 @@ p {
   margin-top: -6rem;
 }
 
-.navbar.scroll {
+nav.scroll {
   background: #00000001;
 }
 
@@ -49,9 +49,10 @@ p {
 
 .nav-link:hover {
   color: #87c0e1;
+  transition: all 0.2s ease;
 }
 
-.navbar div {
+nav div {
   display: flex;
   align-items: center;
   gap: 2rem;
@@ -225,4 +226,52 @@ p {
 .mini-heading {
   font-size: 0.9rem;
   color: #506583;
+}
+
+/* Footer */
+
+footer {
+  background-color: #87c0e1;
+  color: #003366;
+  padding: 2rem;
+  display: flex;
+  gap: 6rem;
+}
+
+footer h6 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer-link,
+.footer-item {
+  color: #003366;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-family: "Roboto";
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.footer-link:hover {
+  color: white;
+  transition: all 0.2s ease;
+}
+
+.footer-contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer-link svg {
+  width: 1.5rem;
+  height: 1.5rem;
 }
