@@ -48,6 +48,7 @@ nav.scroll {
   font-family: "Manrope";
   text-transform: uppercase;
   letter-spacing: 2px;
+  font-size: 1rem;
 }
 
 .nav-link:hover {
@@ -64,7 +65,7 @@ nav div {
 }
 
 .company-logo {
-  width: 20rem;
+  width: 16.7rem;
 }
 
 /* Landing Screen */
@@ -144,6 +145,13 @@ nav div {
   background-color: white;
   border: 2px solid #003366;
   color: #003366;
+}
+
+.white-hover:hover {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  transition: all 0.2s ease;
 }
 
 .accent-font {
@@ -267,6 +275,7 @@ nav div {
   align-items: center;
   gap: 4rem;
   padding: 0 2rem;
+  scroll-margin-top: 10rem;
 }
 
 .contact-section h5 {
@@ -359,6 +368,10 @@ footer h6,
   border: none;
   outline: none;
   cursor: pointer;
+}
+
+.popup button:hover {
+  color: #9e9e9e;
 }
 
 .popup-content {
