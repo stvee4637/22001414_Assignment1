@@ -1,8 +1,18 @@
 // Student ID: 22001414
 
+import { useEffect, useState } from "react";
+
 export default function Navbar() {
+  const [scroll, setScroll] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => setScroll(window.scrollY > 50);
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
-    <nav id="navbar">
+    <nav id="navbar" className={(scroll && "scroll") || ""}>
       <img src="/img/logo.png" alt="NZ Tourism Logo" className="company-logo" />
       <div>
         <a className="nav-link" href="#destinations-section">

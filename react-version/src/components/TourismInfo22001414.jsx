@@ -1,55 +1,56 @@
 // Student ID: 22001414
 
-export default function TourismInfo({ name, description, imgUrl }) {
+export default function TourismInfo({
+  titleFirstPart,
+  accentWord,
+  titleLastPart,
+  subheading,
+  videoUrl,
+}) {
   return (
     <section className="info-section" id="destinations-section">
       <div>
         <h3>
-          {name}
-          {description}
-          {imgUrl}
-          First Class <br />
+          {titleFirstPart}
+          <br />
           <span
             className="accent-font"
             style={{ color: "#87c0e1", fontSize: "7rem" }}
           >
-            Kiwiana
+            {accentWord}
           </span>
           <br />
-          Experience
+          {titleLastPart}
         </h3>
-        <p style={{ marginTop: "1rem" }}>
-          When visiting New Zealand, theres a few places you must see before
-          leaving and telling your mates about it!
-        </p>
+        <p style={{ marginTop: "1rem" }}>{subheading}</p>
         <dl className="destination-list">
           <dt>
             <strong>Queenstown | #1 Adventure capital Of the World</strong>
           </dt>
           <dd>
-            wildly known for it's all-year round
+            wildly known for it's all-year round{` `}
             <a
               className="destination-link"
               href="https://www.nzoneskydive.co.nz/"
               target="_blank"
             >
-              Sky Diving,
+              Sky Diving, {` `}
             </a>
             <a
               className="destination-link"
               href="https://queenstown.skyline.co.nz/things-to-do/queenstown-gondola/"
               target="_blank"
             >
-              Gondola,
+              Gondola, {` `}
             </a>
             <a
               className="destination-link"
               href="https://queenstown.skyline.co.nz/things-to-do/queenstown-luge/"
               target="_blank"
             >
-              Luge,
+              Luge, {` `}
             </a>
-            iconic restaurants like
+            iconic restaurants like{` `}
             <a
               className="destination-link"
               href="https://www.fergburger.com/"
@@ -82,7 +83,7 @@ export default function TourismInfo({ name, description, imgUrl }) {
       <iframe
         width={560}
         height={315}
-        src="https://www.youtube.com/embed/XCsMvEMX11Y?si=W0JmgduKHSnmRJcK"
+        src={videoUrl}
         title="YouTube video player"
         frameBorder={0}
         allow="
