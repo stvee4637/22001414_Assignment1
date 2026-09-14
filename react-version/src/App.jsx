@@ -7,6 +7,7 @@ import ImgGallery from "./components/ImgGallery.jsx";
 import MeetSteve from "./components/MeetSteve.jsx";
 import ContactSection from "./components/ContactSection.jsx";
 import Activities from "./components/Activities.jsx";
+import Footer from "./components/Footer.jsx";
 import PopUp from "./components/PopUp.jsx";
 import "./App.css";
 
@@ -27,6 +28,7 @@ function App() {
       <MeetSteve />
       <ContactSection />
       <PopUp />
+      <Footer />
     </>
   );
 }

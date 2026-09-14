@@ -57,6 +57,11 @@ export default function ContactSection() {
         data-url="https://calendly.com/steven-metry/30min?hide_event_type_details=1&hide_gdpr_banner=1&primary_color=003366"
         style={{ minWidth: "45rem", width: "100%", height: 700 }}
       />
+      <script
+        type="text/javascript"
+        src="https://assets.calendly.com/assets/external/widget.js"
+        async
+      ></script>
       {/* Calendly inline widget end */}
     </section>
   );
